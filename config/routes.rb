@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  root :'post#index'
+  root to: 'posts#index'
+  post 'posts', to: 'posts#create'
+  get 'posts', to: 'posts#checked'
 end
